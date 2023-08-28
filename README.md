@@ -1,68 +1,68 @@
-![Ironhack logo](https://i.imgur.com/1QgrNNw.png) 
-# Project: Visualization
+# proyecto-ETL-Turismo Visualización
 
-![portada](https://boostlabs.com/wp-content/uploads/2019/09/10-types-of-data-visualization-1.jpg)
-
-
-## Overview
-
-The goal of this project is to put what you've learnt until now together in a single project.
-
-In this project you should use the **`publications database`**. 
-
-In previous labs, we asked you to extract some information from it using `sql querys`. This time you should build a visualization that answers this questions.
-
-As a future data analyst, you should be able to also ask the proper questions so add at least one new question and answer it in the visualization.
-
-Remember that should tell a story with your dashboard and be able to present ir to us!!
-
-**You will be working individually for this project**, but we'll be guiding you along the process and helping you as you go. Show us what you've got!
-
-**Heeyyy!!!** *If you prefer to use your own data and ask your own questions feel free to do so!!*
+![Alt text](ESPA%C3%91A-1.jpg)
 
 
----
-
-## Technical Requirements
-
-The technical requirements for this project are as follows:
-
-* A dasboard or presentation with a story display in several pages.
-* You should also include a README.md file that describes the steps you took and your thought process as you built your data pipeline.
+El objetivo de este proyecto es la visualización de diferentes queries en base al proyecto anterior ETL Turismo en España. Se trata de visualizaciones interactivas donde se podrá consultar de manera clara, rápida y visual apareciendo información util sobre el tema.
 
 
-## Super Ultra Mega Blaster Tips
 
-* **Examine the data**.
+• Las WEBS utilizadas por su fiabilidad en los datos:
 
-* **Break the project down into different steps** - A hundred simple tasks are` better than a single complicated one
+[ine](https://www.ine.es/jaxiT3/Tabla.htm?t=12501)
 
-* **Use the tools in your tool kit** - your knowledge of intermediate Python as well as some of the things you've learned in the bootcamp. This is a great way to start tying everything you've learned together!
+[wikipedia](https://es.wikipedia.org/wiki/Turismo_en_España')
 
-* **Work through the lessons in class** & ask questions when you need to! 
+[epdata](https://www.epdata.es/)
 
-* Think about adding relevant figures to your project each day, instead of, you know... _procrastinating_.
+* Después del trabajo ETL, hemos pasado todas nuestras tablas a csv para abrirlas en Power Bi y hemos transformado algunos datos en Power Query:
 
-* **Commit early, commit often**, don’t be afraid of doing something incorrectly because you can always roll back to a previous version. Name your commits well.
+  Cambiando formato de datos
+![Alt text](image.png)
+ Trasponiendo la tabla: 'turistas_llegados_diferentes_provincias'
 
-* **Consult documentation and resources provided** to better understand the tools you are using and how to accomplish what you want. GIYF.
+  ![Alt text](image-1.png)
 
-* **Have fun! Never give up! Be proud of your work!**
+* Hemos revisado las relaciones de las tablas antes de empezar la visualización.
 
-## Useful Resources
-:rocket: [Visualization tips](https://boostlabs.com/blog/10-types-of-data-visualization-tools/)
+* En la VISUALIZACIÓN, he priorizado la claridad y la interactividad en los datos. Muestro las pantallas:
 
-:rocket:[Power BI official learning](https://help.tableau.com/current/guides/get-started-tutorial/es-es/get-started-tutorial-home.htm)
+**1ª Pantalla** 
 
-:rocket:[Power BI in Youtube](https://www.youtube.com/watch?v=1c01r_pAZdk&list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP)
+Queries relacionadas con los paises de procedencia de los turistas en España.
+![Alt text](image-2.png)
+La información está filtrada por años, desde 2015 a 2020, en España; pudiendo consultar:
+- En la primera etiqueta: la suma total de turistas (millones) en el año seleccionado.
+- En la segunda etiqueta: El valor del país de procedencia con más turistas en España en ese año seleccionado.
+- Cuánta cantidad de turistas españoles (turismo interior) hubo en el año seleccionado.
+- La proporción en los diferentes paises de procedencia de los turistas del año seleccionado.
+- El valor de cada país y su posición respecto al resto de paises en el año seleccionado.
 
-:rocket:[Power BI templates](https://community.powerbi.com/t5/Data-Stories-Gallery/bd-p/DataStoriesGallery)
+![Alt text](image-3.png)
+También podemos seleccionar sólo un país en concreto, en este caso España.
 
-:rocket:[Markdown format cheatsheet](https://www.markdownguide.org/cheat-sheet)
-:rocket:[Tableau for beginners](https://help.tableau.com/current/guides/get-started-tutorial/es-es/get-started-tutorial-home.htm)
+**2ª pantalla**
 
-:rocket:[Tableau in Youtube](https://www.youtube.com/c/tableausoftware/featured)
+Queries relacionadas con el motivo del viaje, su duración y el transporte más utilizado para llegar a España.
 
-:rocket:[Andy Kriebel's tableau profile](https://public.tableau.com/app/profile/andy.kriebel#!/)
+![Alt text](image-4.png)
 
-:rocket:[Markdown format cheatsheet](https://www.markdownguide.org/cheat-sheet)
+La información está filtrada por años, desde 2015 a 2020, en España; pudiendo consultar por ejemplo en 2020:
+- La duración del viaje, vemos como la mayoría de turistas no ha llegado a hacer noche en España.
+- El motivo del viaje mayoritariamente es por ocio y
+- El trasporte más utilizado es el aéreo; los datos cambiarían según los años seleccionados.
+
+
+**3ª pantalla**
+
+Queries relacionadas con las distintas comunidades autónomas visitadas.
+
+![Alt text](image-5.png)
+
+La información está filtrada por años, desde 2015 a 2020, en España; pudiendo consultar por ejemplo en 2020:
+- Cantidad total de turistas/año entre las seis comunidades autónomas que más turistas reciben.
+- Cúales son las comunidades autónomas que más turistas reciben y cuales menos.
+- Cantidades de turistas en cada provincia.
+- También podemos seleccionar en el mapa una comunidad en concreto y en el gráfico de abajo aparecerá la cantidad de turistas por meses en esa comunidad autónoma como vemos en la foto de abajo.
+
+![Alt text](image-6.png)
